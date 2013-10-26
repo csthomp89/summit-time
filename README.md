@@ -1,4 +1,4 @@
-summit-time
+Summit Church Time Card App
 ===========
 
-Summit Time Card App
+Keeps track of production team member time
