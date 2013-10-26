@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		
+		<!-- CSS Files -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+		
+		<!-- JS Files -->
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		
+        <title>Summit Time Card</title>
+    </head>
+    <body>
+		
+		<div data-role="page" id="clock">
+			<div data-role="header">
+				<h1>Summit Time Tracker</h1>
+			</div>
+			<div data-role="content">
+				<div id="elapsed_time">
+					<p>a time</p>
+				</div>
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#" data-role="button" style="background: green;" id="start">Start</a>
+					<a href="#" data-role="button" style="background: red;" id="end">End</a>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<a href="#clock" data-icon="edit">Clock</a>
+				<a href="#time_entries" data-icon="bars">Entries</a>
+				<a href="#send_report" data-icon="forward">Send</a>
+				<a href="#settings" data-icon="gear">Settings</a>
+			</div>
+		</div>
+		
+		<div data-role="page" id="time_entries">
+			<div data-role="header">
+				<h1>Time Entries</h1>
+			</div>
+			<div data-role="content">
+				
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<a href="#clock" data-icon="edit">Clock</a>
+				<a href="#time_entries" data-icon="bars">Entries</a>
+				<a href="#send_report" data-icon="forward">Send</a>
+				<a href="#settings" data-icon="gear">Settings</a>
+			</div>
+		</div>
+		
+		<div data-role="page" id="send_report">
+			<div data-role="header">
+				<h1>Send Report</h1>
+			</div>
+			<div data-role="content">
+				
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<a href="#clock" data-icon="edit">Clock</a>
+				<a href="#time_entries" data-icon="bars">Entries</a>
+				<a href="#send_report" data-icon="forward">Send</a>
+				<a href="#settings" data-icon="gear">Settings</a>
+			</div>
+		</div>
+		
+		<div data-role="page" id="settings">
+			<div data-role="header">
+				<h1>Settings</h1>
+			</div>
+			<div data-role="content">
+				
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<a href="#clock" data-icon="edit">Clock</a>
+				<a href="#time_entries" data-icon="bars">Entries</a>
+				<a href="#send_report" data-icon="forward">Send</a>
+				<a href="#settings" data-icon="gear">Settings</a>
+			</div>
+		</div>
+    </body>
+</html>
