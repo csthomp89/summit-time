@@ -608,7 +608,7 @@ var append =
 function getRecords() {	
 		var db = window.openDatabase("time-card", "1.0", "Time Card Database", 1000000);	
 		db.transaction(function(tx) {
-			tx.executeSql('SELECT * FROM times WHERE sent="false", [], createFile, errorDB');
+			tx.executeSql('SELECT * FROM times WHERE sent="false"', [], createFile, errorDB);
 		}, errorDB, successDB);
 }
 
@@ -630,9 +630,7 @@ function createFile(tx, results) {
 		}
 		
 		file += append;
-		
-		alert(file);
-		return file;
+		$('#output').html(file);
 }
 
 

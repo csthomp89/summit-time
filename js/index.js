@@ -8,5 +8,8 @@ function init() {
 	$('#time_entries').on('pagebeforeshow', function() {
 		listEntries();
 	});
+	$('#send_report').on('pagebeforeshow', function() {
+		getRecords();
+	});
 }
 
